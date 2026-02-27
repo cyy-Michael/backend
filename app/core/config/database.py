@@ -11,7 +11,9 @@ from functools import lru_cache
 class DatabaseSettings(BaseSettings):
     """数据库配置设置"""
     # MongoDB配置
-    MONGO_URI: str
+    # 默认使用本地开发环境数据库
+    # 生产环境可以通过环境变量 MONGO_URI 覆盖，格式为：mongodb://user:pass@host:port/dbname
+    MONGO_URI: str = "mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/"
     DB_NAME: str = "teacher_query"
     
     # Alembic迁移配置
