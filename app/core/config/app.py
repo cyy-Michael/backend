@@ -29,6 +29,7 @@ class AppSettings(BaseSettings):
     PROJECT_NAME: str = APP_NAME
     
     # CORS配置
+    # 开发环境允许的来源
     BACKEND_CORS_ORIGINS: List[str] = [
         "http://localhost",
         "http://localhost:3000",
@@ -37,10 +38,21 @@ class AppSettings(BaseSettings):
         "http://127.0.0.1:3000",
         "http://127.0.0.1:8080",
     ]
+    # 生产环境CORS配置（可以为空，通过环境变量设置）
+    # 示例: BACKEND_CORS_ORIGINS=["https://api.example.com", "https://admin.example.com"]
     
-    # 限流配置
-    RATE_LIMIT_PER_MINUTE: int = 60
-    RATE_LIMIT_PER_HOUR: int = 1000
+    # 限流配置 (Rate Limiting)
+    RATE_LIMIT_ENABLED: bool = True
+    RATE_LIMIT_PER_MINUTE: int = 60      # 全局每分钟请求限制
+    RATE_LIMIT_PER_HOUR: int = 1000      # 全局每小时请求限制
+    RATE_LIMIT_BURST: int = 5            # 突发请求允许数量
+    
+    # 特定接口限流配置 (可选)
+    # 格式: {"/api/v1/auth/login": "5/minute"}
+    SPECIFIC_ENDPOINT_LIMITS: dict = {
+        "/api/v1/auth/login": "5/minute",
+        "/api/v1/recharge/create_order": "10/minute"
+    }
     
     # 请求体大小限制（MB）
     MAX_REQUEST_BODY_SIZE: int = 10
