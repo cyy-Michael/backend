@@ -128,7 +128,9 @@ def health_check():
         }
     )
 
+from app.api.recharge import router as recharge_router
 
+app.include_router(recharge_router)
 # 全局异常处理
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
