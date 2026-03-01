@@ -7,7 +7,7 @@ load_dotenv()
 
 class MongoSettings:
     # 开发环境：本地MongoDB
-    MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
+    MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/")
     # 生产环境：替换为云MongoDB地址（如阿里云/腾讯云）
     # MONGO_URI = os.getenv("MONGO_URI", "mongodb://username:password@xxx.mongodb.aliyuncs.com:27017/")
     MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "ai_edu_admission")  # 数据库名
