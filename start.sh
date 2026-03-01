@@ -41,8 +41,8 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "MongoDB启动成功！"
-echo "MongoDB地址: mongodb://localhost:27017"
-echo "MongoDB Compass连接字符串: mongodb://admin:password@localhost:27017/"
+echo "MongoDB地址: mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/"
+echo "MongoDB Compass连接字符串: mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/"
 echo ""
 
 echo "=== 安装Python依赖 ==="
