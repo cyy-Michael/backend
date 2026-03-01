@@ -72,8 +72,9 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> User:
     except JWTError:
         raise credentials_exception
     
-    db = get_db()
-    user = db.users.find_one({"id": user_id})
+    # 使用异步的数据库查询
+    from app.db.mongo import find_one
+    user = await find_one("users", {"id": user_id})
     
     if user is None:
         raise credentials_exception
@@ -128,8 +129,8 @@ async def login(
             )
         
         # 查询数据库中是否存在该用户
-        db = get_db()
-        existing_user = db.users.find_one({"openid": openid})
+        from app.db.mongo import find_one, insert_one
+        existing_user = await find_one("users", {"openid": openid})
         
         if existing_user:
             # 用户已存在，生成token
@@ -161,9 +162,9 @@ async def login(
                 "updated_at": datetime.now()
             }
             
-            result = db.users.insert_one(new_user)
+            result = await insert_one("users", new_user)
             
-            if not result.inserted_id:
+            if not result:
                 raise HTTPException(
                     status_code=500,
                     detail=error_response(

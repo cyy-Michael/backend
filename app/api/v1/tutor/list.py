@@ -58,13 +58,22 @@ async def get_tutor_list(
         db = get_db()
         
         # 构建查询条件
-        query = {}
+        query = {
+            "$or": [
+                {"is_deleted": {"$exists": False}},  # 没有is_deleted字段
+                {"is_deleted": False}  # 或者is_deleted为False
+            ]
+        }
         
         if keyword:
             # 搜索姓名或研究方向
-            query["$or"] = [
-                {"name": {"$regex": keyword, "$options": "i"}},
-                {"research_direction": {"$regex": keyword, "$options": "i"}}
+            query["$and"] = [
+                {
+                    "$or": [
+                        {"name": {"$regex": keyword, "$options": "i"}},
+                        {"research_direction": {"$regex": keyword, "$options": "i"}}
+                    ]
+                }
             ]
         
         if school:
@@ -134,7 +143,7 @@ async def get_tutor_list(
 @router.get(
     "/detail/{tutor_id}",
     summary="导师详情",
-    description="获取导师详细信息",
+    description="获取导师完整详细信息，包括基本信息、论文、项目、学生、合作等",
 )
 async def get_tutor_detail(
     request: Request,
@@ -144,58 +153,142 @@ async def get_tutor_detail(
     """
     导师详情接口
     
+    返回导师的完整信息，包括：
+    - 基本信息：姓名、职称、学校、院系、头像、简介等
+    - 联系方式：邮箱、电话、个人主页
+    - 研究信息：研究方向、标签、招生类型
+    - 学术成果：论文列表、项目列表
+    - 社交信息：社交账号
+    - 学生信息：指导的学生列表
+    - 合作信息：合作者列表
+    - 风险信息：风险提示
+    - 收藏状态：是否已被当前用户收藏
+    
     Args:
         request: 请求对象
         tutor_id: 导师ID
         current_user: 当前登录用户（可选）
     
     Returns:
-        导师详细信息
+        导师完整详细信息
     """
     try:
         db = get_db()
         
-        # 获取导师基本信息
-        tutor = db.tutors.find_one({"id": tutor_id})
+        # 获取导师基本信息（排除已删除的）
+        tutor = await db.tutors.find_one({
+            "id": tutor_id,
+            "$or": [
+                {"is_deleted": {"$exists": False}},
+                {"is_deleted": False}
+            ]
+        })
         
         if not tutor:
             raise HTTPException(
                 status_code=404,
                 detail=business_error_response(
                     code="TUTOR_NOT_FOUND",
-                    message="导师不存在"
+                    message="导师不存在或已被删除"
                 )
             )
         
         # 获取导师详细信息（从tutor_details表）
-        tutor_detail = db.tutor_details.find_one({"tutor_id": tutor_id})
+        tutor_detail = await db.tutor_details.find_one({"tutor_id": tutor_id})
         
-        # 构建响应数据
+        # 获取论文列表（从papers表）
+        papers_cursor = db.papers.find({"tutor_id": tutor_id}).sort("year", -1)
+        papers = await papers_cursor.to_list(length=100)
+        papers_list = [
+            {
+                "id": paper["id"],
+                "title": paper.get("title"),
+                "authors": paper.get("authors", []),
+                "journal": paper.get("journal"),
+                "year": paper.get("year"),
+                "doi": paper.get("doi"),
+                "abstract": paper.get("abstract"),
+                "citations": paper.get("citations", 0),
+                "url": paper.get("url")
+            }
+            for paper in papers
+        ]
+        
+        # 获取项目列表（从projects表）
+        projects_cursor = db.projects.find({"tutor_id": tutor_id}).sort("start_date", -1)
+        projects = await projects_cursor.to_list(length=50)
+        projects_list = [
+            {
+                "id": project["id"],
+                "title": project.get("title"),
+                "funding": project.get("funding"),
+                "start_date": project.get("start_date"),
+                "end_date": project.get("end_date"),
+                "description": project.get("description"),
+                "amount": project.get("amount"),
+                "status": project.get("status", "ongoing")
+            }
+            for project in projects
+        ]
+        
+        # 构建完整的响应数据
         detail_data = {
+            # 基本信息
             "id": tutor["id"],
             "name": tutor["name"],
             "title": tutor.get("title"),
             "school": tutor.get("school_name", ""),
+            "school_id": tutor.get("school_id"),
             "department": tutor.get("department_name", ""),
+            "department_id": tutor.get("department_id"),
             "avatar": tutor.get("avatar_url"),
-            "bio": tutor_detail.get("bio") if tutor_detail else None,
+            "bio": tutor_detail.get("bio") if tutor_detail else tutor.get("bio"),
+            
+            # 联系方式
             "email": tutor.get("email"),
             "phone": tutor.get("phone"),
             "personal_page": tutor.get("personal_page_url"),
+            
+            # 研究信息
             "research_direction": tutor.get("research_direction"),
-            "papers": tutor_detail.get("papers", []) if tutor_detail else [],
-            "projects": tutor_detail.get("projects", []) if tutor_detail else [],
-            "coops": tutor_detail.get("coops", []) if tutor_detail else [],
-            "students": tutor_detail.get("students", []) if tutor_detail else [],
-            "risks": tutor_detail.get("risks", []) if tutor_detail else [],
-            "socials": tutor_detail.get("socials", []) if tutor_detail else [],
+            "tags": tutor.get("tags", []),
+            "recruitment_type": tutor.get("recruitment_type"),  # academic/professional/both
+            "has_funding": tutor.get("has_funding", False),
+            
+            # 统计信息
+            "paper_count": len(papers_list),
+            "project_count": len(projects_list),
+            "student_count": len(tutor_detail.get("students", [])) if tutor_detail else 0,
+            
+            # 学术成果
+            "papers": papers_list,
+            "projects": projects_list,
             "achievements_summary": tutor_detail.get("achievements_summary") if tutor_detail else None,
+            
+            # 社交信息
+            "socials": tutor_detail.get("socials", []) if tutor_detail else [],
+            
+            # 学生信息
+            "students": tutor_detail.get("students", []) if tutor_detail else [],
+            
+            # 合作信息
+            "coops": tutor_detail.get("coops", []) if tutor_detail else [],
+            
+            # 风险信息
+            "risks": tutor_detail.get("risks", []) if tutor_detail else [],
+            
+            # 其他信息
+            "created_at": tutor.get("created_at"),
+            "updated_at": tutor.get("updated_at"),
+            "crawled_at": tutor.get("crawled_at"),
+            
+            # 收藏状态
             "is_collected": False
         }
         
         # 检查是否已收藏
         if current_user:
-            favorite = db.favorites.find_one({
+            favorite = await db.favorites.find_one({
                 "user_id": current_user.id,
                 "target_type": "tutor",
                 "target_id": tutor_id
@@ -204,6 +297,7 @@ async def get_tutor_detail(
         
         api_logger.info(
             f"获取导师详情成功: {tutor_id} - {tutor['name']}\n"
+            f"论文数: {len(papers_list)}, 项目数: {len(projects_list)}\n"
             f"Request ID: {request.state.request_id}"
         )
         
