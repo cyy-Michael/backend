@@ -24,7 +24,7 @@ def main():
             print("Warning: .env not found and .env.example not found.")
             # Create a minimal .env
             with open(env_file, "w", encoding="utf-8") as f:
-                f.write("MONGO_URI=mongodb://localhost:27017\n")
+                f.write("MONGO_URI=mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/\n")
                 f.write("DB_NAME=teacher_query\n")
                 f.write("SECRET_KEY=dev_secret_key\n")
                 f.write("ALGORITHM=HS256\n")
