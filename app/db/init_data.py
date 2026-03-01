@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 获取数据库连接信息
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://0227_wx201383_db_user:hdkkdbdikwksbffkfjdwl645s87jwksadasfsafasf@cluster0.roe7na.mongodb.net/")
 DATABASE_NAME = os.getenv("DATABASE_NAME", "tutor_db")
 
 
