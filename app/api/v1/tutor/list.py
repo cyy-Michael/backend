@@ -267,15 +267,20 @@ async def get_tutor_detail(
             
             # 社交信息
             "socials": tutor_detail.get("socials", []) if tutor_detail else [],
+            "service_summary": tutor_detail.get("service_summary") if tutor_detail else None,
             
             # 学生信息
             "students": tutor_detail.get("students", []) if tutor_detail else [],
+            "guidance_summary": tutor_detail.get("guidance_summary") if tutor_detail else None,
             
             # 合作信息
             "coops": tutor_detail.get("coops", []) if tutor_detail else [],
             
             # 风险信息
             "risks": tutor_detail.get("risks", []) if tutor_detail else [],
+            
+            # 成长脉络
+            "growth_path": tutor_detail.get("growth_path", []) if tutor_detail else [],
             
             # 其他信息
             "created_at": tutor.get("created_at"),

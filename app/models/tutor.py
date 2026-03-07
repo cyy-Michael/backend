@@ -72,9 +72,13 @@ class TutorDetail(Tutor):
     school: str
     department: str
     achievements_summary: Optional[str] = None
+    service_summary: Optional[str] = None
+    guidance_summary: Optional[str] = None
+    growth_path: List[Dict[str, Any]] = []
     papers: List[Dict[str, Any]] = []
     projects: List[Dict[str, Any]] = []
     students: List[Dict[str, Any]] = []
+    coops: List[Dict[str, Any]] = []
     socials: List[Dict[str, Any]] = []
     risks: List[Dict[str, Any]] = []
     is_collected: bool = False

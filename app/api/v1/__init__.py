@@ -14,6 +14,7 @@ from app.api.v1.tutor.export import router as tutor_export_router
 from app.api.v1.interaction.book import router as booking_router
 from app.api.v1.match.submit import router as match_router
 from app.api.v1.project.list import router as project_router
+from app.api.v1.analysis import router as analysis_router
 
 # 创建v1版本的主路由
 v1_router = APIRouter(
@@ -31,5 +32,6 @@ v1_router.include_router(tutor_export_router, tags=["tutor", "export", "admin"])
 v1_router.include_router(booking_router, prefix="/service", tags=["service"])
 v1_router.include_router(match_router, prefix="/match", tags=["match"])
 v1_router.include_router(project_router, prefix="/project", tags=["project"])
+v1_router.include_router(analysis_router, prefix="/analysis", tags=["analysis"])
 
 __all__ = ["v1_router"]
