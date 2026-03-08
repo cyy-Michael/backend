@@ -6,7 +6,7 @@
 from fastapi import HTTPException, Depends
 from typing import Optional
 from app.models import User
-from app.api.v1.auth.login import get_current_user
+from app.api.deps import get_current_user
 from app.utils import business_error_response, api_logger
 from app.db.mongo import find_one
 

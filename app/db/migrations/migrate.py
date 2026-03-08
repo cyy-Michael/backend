@@ -13,7 +13,7 @@ import asyncio
 from datetime import datetime
 from motor.motor_asyncio import AsyncIOMotorClient
 from app.core.config.database import database_settings
-from app.utils.logger import logger
+from app.utils.logger import db_logger as logger
 
 # 迁移记录集合名称
 MIGRATION_COLLECTION = "_migrations"

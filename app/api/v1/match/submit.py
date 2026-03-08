@@ -13,7 +13,7 @@ from app.models import (
     User, MatchRequest, MatchResponse, MatchResult,
     MatchHistory, MatchHistoryResponse
 )
-from app.api.v1.auth.login import get_current_user
+from app.api.deps import get_current_user
 from app.utils import (
     success_response,
     error_response,

@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from app.db.mongo import get_collection
-from app.api.v1.auth.login import get_current_user
+from app.api.deps import get_current_user
 from app.models.user import User
 
 router = APIRouter(prefix="/recharge", tags=["充值模块"])

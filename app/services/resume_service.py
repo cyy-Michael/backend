@@ -1,9 +1,11 @@
 import base64
 import json
 import httpx
+import fitz  # PyMuPDF
 from typing import Dict, List, Any, Optional
 from app.core.config.services import service_settings
-from loguru import logger
+from app.utils.logger import app_logger as logger # 使用 app_logger 并重命名为 logger 以兼容
+
 
 class ResumeService:
     def __init__(self):
@@ -61,6 +63,41 @@ class ResumeService:
             logger.error(f"OCR error: {str(e)}")
             raise e
 
+    async def extract_text_from_pdf(self, pdf_content: bytes) -> str:
+        """从 PDF 提取文字 (OCR)
+        将 PDF 页面转换为图片，然后调用百度 OCR
+        """
+        try:
+            full_text = []
+            # 打开 PDF
+            doc = fitz.open(stream=pdf_content, filetype="pdf")
+            
+            # 限制只处理前 3 页，避免过长
+            max_pages = min(len(doc), 3)
+            
+            for page_num in range(max_pages):
+                page = doc.load_page(page_num)
+                
+                # 将页面转换为图片 (Pixmap)
+                # matrix=fitz.Matrix(2, 2) 提高分辨率以提升 OCR 准确率
+                # 降低分辨率以提升速度，2.0 -> 1.5
+                pix = page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5))
+                
+                # 获取图片二进制数据
+                img_data = pix.tobytes("png")
+                
+                # 调用 OCR
+                page_text = await self.extract_text_from_image(img_data)
+                if page_text:
+                    full_text.append(page_text)
+            
+            doc.close()
+            return "\n\n".join(full_text)
+            
+        except Exception as e:
+            logger.error(f"PDF processing error: {str(e)}")
+            raise e
+
     async def analyze_resume_text(self, text: str) -> Dict[str, List[str]]:
         """使用 DeepSeek 分析简历文本，提取研究方向和学术背景"""
         if not text:
@@ -96,7 +133,7 @@ class ResumeService:
         }
         
         try:
-            async with httpx.AsyncClient(timeout=60.0) as client:
+            async with httpx.AsyncClient(timeout=120.0) as client:
                 response = await client.post(
                     f"{self.deepseek_base_url}/chat/completions",
                     json=payload,
