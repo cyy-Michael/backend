@@ -68,8 +68,12 @@ keyword: 搜索关键词 (姓名/研究方向)
 school: 学校筛选 (可选)
 department: 学院筛选 (可选)
 city: 城市筛选 (可选)
+    province: 省份筛选 (可选)
+    subject: 学科领域筛选 (可选)
+    admission_type: 招生类型筛选 (可选)
+    academic_tag: 学术偏好筛选 (可选)
 输出:
-list: 导师简略信息列表 [{ id, name, title, school, department, tags, avatar }]
+list: 导师简略信息列表 [{ id, name, title, school, department, tags, avatar, province, city, subject, admission_types, academic_tags }]
 total: 总记录数
 page: 当前页码
 pageSize: 每页数量
@@ -77,9 +81,17 @@ B. 导师详情 (Get Tutor Detail)
 接口: GET /api/v1/tutor/detail/:id
 参数: id (导师ID)
 输出:
-tutor: 包含爬虫抓取的所有详细字段 (bio, papers, projects, coops, students, risks, socials 等)。
+tutor: 包含爬虫抓取的所有详细字段 (bio, papers, projects, coops, students, risks, socials, province, city, subject, admission_types, academic_tags 等)。
 isCollected: Boolean (当前用户是否收藏)
-C. 搜索建议 (Search Suggestions)
+C. 学术关系图谱 (Get Tutor Network)
+接口: GET /api/v1/tutor/network/:id
+参数: id (导师ID)
+输出:
+  - nodes: 节点列表 [{ id, name, type: 'center'|'collaborator', school, department, avatar }]
+  - edges: 边列表 [{ source, target, type: 'paper'|'project', label }]
+  - center: 中心导师 { id, name }
+说明: 根据论文合作者、项目成员等数据构建以该导师为中心的关系网络。点击合作者节点可跳转其详情页。
+D. 搜索建议 (Search Suggestions)
 接口: GET /api/v1/tutor/search/suggestions
 参数:
 keyword: 搜索关键词
@@ -189,7 +201,11 @@ personal_page_url: 个人主页
 research_direction: 研究方向
 tags: 标签列表
 city: 城市
-crawled_at: 爬取时间
+    province: 省份
+    subject: 学科领域/一级学科
+    admission_types: 招生类型 (List)
+    academic_tags: 学术偏好标签 (List)
+    crawled_at: 爬取时间
 created_at: 创建时间
 updated_at: 更新时间
 5.3 导师详情表 (tutor_details)
