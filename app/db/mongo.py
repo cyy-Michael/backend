@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional, Union
 from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
 from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError, PyMongoError
 from app.core.config.database import database_settings
-from app.utils.logger import logger
+from app.utils.logger import app_logger as logger
 
 class MongoDB:
     client: AsyncIOMotorClient = None
