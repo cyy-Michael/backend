@@ -111,8 +111,8 @@ async def request_logging_middleware(request: Request, call_next):
     return response
 
 
-# 挂载所有API路由
-app.include_router(api_router, prefix=app_settings.API_PREFIX)
+# 挂载所有API路由（api_router 自身已带 prefix="/api"，这里不要再加 API_PREFIX）
+app.include_router(api_router)
 
 
 # 根路径健康检查接口
