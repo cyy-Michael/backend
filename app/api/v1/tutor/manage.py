@@ -18,12 +18,12 @@ from app.schemas.tutor_schema import (
     TutorBatchDeleteResponse
 )
 from app.utils import (
-    get_current_admin,
     success_response,
     error_response,
     business_error_response,
     api_logger
 )
+from app.utils.admin import get_current_admin
 from app.db.mongo import find_one, insert_one, update_one, delete_one, get_collection
 
 router = APIRouter(
