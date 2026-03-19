@@ -1,0 +1,444 @@
+2026-03-13 10:58:19 - api - WARNING - logger.py:123 - Request ID: c5bb6689-8b00-4080-b84b-634b8b38c5f9 | Method: GET | Path: /api/v1/tutor/list | Status: 401 | Time: 1.47ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 10:58:19 - api - WARNING - logger.py:123 - Request ID: 7178524c-3554-42d7-82c1-f664268458c0 | Method: GET | Path: /favicon.ico | Status: 404 | Time: 0.66ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:11:43 - api - ERROR - logger.py:127 - 获取导师列表失败: 'AsyncIOMotorCursor' object is not iterable
+Request ID: 93838b1c-4e2b-486e-847d-d804e2208a19
+2026-03-13 11:11:43 - api - ERROR - logger.py:127 - Request ID: 93838b1c-4e2b-486e-847d-d804e2208a19 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 4.76ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:24:47 - api - ERROR - logger.py:127 - 获取导师列表失败: No servers found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None>]>
+Request ID: bcefaeed-f855-49f0-afd3-0e9b37d224b1
+2026-03-13 11:24:47 - api - ERROR - logger.py:127 - Request ID: bcefaeed-f855-49f0-afd3-0e9b37d224b1 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5079.65ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:25:26 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: cbfdd33e-df29-4f6e-b375-8df6cc0c9c94
+2026-03-13 11:25:26 - api - ERROR - logger.py:127 - Request ID: cbfdd33e-df29-4f6e-b375-8df6cc0c9c94 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5272.18ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:28:00 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: c6f3c925-09ee-4b34-b38e-4574deb0e5a5
+2026-03-13 11:28:00 - api - ERROR - logger.py:127 - Request ID: c6f3c925-09ee-4b34-b38e-4574deb0e5a5 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5089.05ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:30:43 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 82c417eb-642b-45e6-baae-f685bab4a9b1
+2026-03-13 11:30:43 - api - ERROR - logger.py:127 - Request ID: 82c417eb-642b-45e6-baae-f685bab4a9b1 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5120.30ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:32:07 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 024524de-606a-44e4-9bd1-36124e56bb11
+2026-03-13 11:32:07 - api - ERROR - logger.py:127 - Request ID: 024524de-606a-44e4-9bd1-36124e56bb11 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5096.52ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:33:19 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: f1e777ef-ac71-40e2-957f-ec18705e6185
+2026-03-13 11:33:19 - api - ERROR - logger.py:127 - Request ID: f1e777ef-ac71-40e2-957f-ec18705e6185 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5099.86ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:37:06 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: a81dfcc0-5697-4cdc-972b-fe82965f2a29
+2026-03-13 11:37:06 - api - ERROR - logger.py:127 - Request ID: a81dfcc0-5697-4cdc-972b-fe82965f2a29 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5121.89ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:37:14 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 9ce774a3-05b8-4e57-ac91-ab155252d054
+2026-03-13 11:37:14 - api - ERROR - logger.py:127 - Request ID: 9ce774a3-05b8-4e57-ac91-ab155252d054 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5297.94ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:37:34 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: e527cefc-5f3f-4355-9e11-50dcd92e92dc
+2026-03-13 11:37:34 - api - ERROR - logger.py:127 - Request ID: e527cefc-5f3f-4355-9e11-50dcd92e92dc | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5048.30ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:38:25 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 4fb537df-6986-4770-a366-cbd77b486528
+2026-03-13 11:38:25 - api - ERROR - logger.py:127 - Request ID: 4fb537df-6986-4770-a366-cbd77b486528 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5076.59ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:38:52 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 843de23a-da0e-41b0-8569-b139f0fda4d7
+2026-03-13 11:38:52 - api - ERROR - logger.py:127 - Request ID: 843de23a-da0e-41b0-8569-b139f0fda4d7 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5061.63ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:45:17 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 3f80cbb6-7b66-48f8-8fa7-452acd6e8c6f
+2026-03-13 11:45:17 - api - ERROR - logger.py:127 - Request ID: 3f80cbb6-7b66-48f8-8fa7-452acd6e8c6f | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5093.86ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:45:25 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 84492cbb-164f-450b-b089-bc2f0c3ff61d
+2026-03-13 11:45:25 - api - ERROR - logger.py:127 - Request ID: 84492cbb-164f-450b-b089-bc2f0c3ff61d | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5478.53ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:45:57 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: b0f6a60b-65ee-4044-b127-af603fb2cd46
+2026-03-13 11:45:57 - api - ERROR - logger.py:127 - Request ID: b0f6a60b-65ee-4044-b127-af603fb2cd46 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5088.54ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:46:20 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 96ffa544-9974-4de2-9bff-f78a23d51373
+2026-03-13 11:46:20 - api - ERROR - logger.py:127 - Request ID: 96ffa544-9974-4de2-9bff-f78a23d51373 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5127.32ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:49:32 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: ab500709-305b-4336-9c51-58cd4067ad27
+2026-03-13 11:49:32 - api - ERROR - logger.py:127 - Request ID: ab500709-305b-4336-9c51-58cd4067ad27 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5075.01ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:51:14 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 4e8d435a-33ae-47cf-848d-0cd1e6f76640
+2026-03-13 11:51:14 - api - ERROR - logger.py:127 - Request ID: 4e8d435a-33ae-47cf-848d-0cd1e6f76640 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5121.17ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:52:15 - api - ERROR - logger.py:127 - 获取导师列表失败: 192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b380b486e96b3730b900c7, topology_type: Unknown, servers: [<ServerDescription ('192.168.1.100', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('192.168.1.100:27017: timed out (configured timeouts: socketTimeoutMS: 10000.0ms, connectTimeoutMS: 10000.0ms)')>]>
+Request ID: 7a27a8a3-9af9-4f27-bf19-2503056936c0
+2026-03-13 11:52:15 - api - ERROR - logger.py:127 - Request ID: 7a27a8a3-9af9-4f27-bf19-2503056936c0 | Method: GET | Path: /api/v1/tutor/list | Status: 500 | Time: 5105.93ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:58:00 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 0f4f009c-59c4-4b8a-ac14-244ffb082320
+2026-03-13 11:58:00 - api - INFO - logger.py:119 - Request ID: 0f4f009c-59c4-4b8a-ac14-244ffb082320 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 4652.39ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 11:59:06 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=%E5%BC%A0%E5%AD%90%E5%A8%81, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: 27aeab89-4c0d-41b3-ab4c-72d1cc580f18
+2026-03-13 11:59:06 - api - INFO - logger.py:119 - Request ID: 27aeab89-4c0d-41b3-ab4c-72d1cc580f18 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 453.94ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/H1YsJRg3pa
+2026-03-13 11:59:13 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=%E5%BC%A0%E6%98%8E%E8%BF%9C, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: 42d20e8d-f208-414b-855f-cefcd9c8285e
+2026-03-13 11:59:13 - api - INFO - logger.py:119 - Request ID: 42d20e8d-f208-414b-855f-cefcd9c8285e | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 453.58ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/H1YsJRg3pa
+2026-03-13 11:59:21 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=%E5%91%A8%E5%BD%AC, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: 5ca98afc-918e-4db7-8d14-58e55a672adf
+2026-03-13 11:59:21 - api - INFO - logger.py:119 - Request ID: 5ca98afc-918e-4db7-8d14-58e55a672adf | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 451.86ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/H1YsJRg3pa
+2026-03-13 11:59:40 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=清华大学,北京大学,浙江大学,复旦大学,上海交通大学,南京大学,中国科学技术大学,哈尔滨工业大学,西安交通大学, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: d9a77172-1565-43b5-83d8-ed495d2edc90
+2026-03-13 11:59:40 - api - INFO - logger.py:119 - Request ID: d9a77172-1565-43b5-83d8-ed495d2edc90 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 452.50ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/H1YsJRg3pa
+2026-03-13 12:16:00 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=张子威, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 1/1
+Request ID: 12faf25f-b1e4-41ad-8e64-c9626c78d79b
+2026-03-13 12:16:00 - api - INFO - logger.py:119 - Request ID: 12faf25f-b1e4-41ad-8e64-c9626c78d79b | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 455.88ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+2026-03-13 12:16:33 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=%E5%BC%A0%E5%AD%90%E5%A8%81, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: e0d004cd-45c5-4e55-9a0e-b0ecdfdbcb33
+2026-03-13 12:16:33 - api - INFO - logger.py:119 - Request ID: e0d004cd-45c5-4e55-9a0e-b0ecdfdbcb33 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 452.29ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/H1YsJRg3pa
+2026-03-13 21:38:42 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=%E5%BC%A0%E5%AD%90%E5%A8%81, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 0/0
+Request ID: a7f56132-9139-46eb-8583-84ccbfdb1a0b
+2026-03-13 21:38:42 - api - INFO - logger.py:119 - Request ID: a7f56132-9139-46eb-8583-84ccbfdb1a0b | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 7042.59ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/3w98wsgYGx
+2026-03-13 22:32:24 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=张子威, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 1/1
+Request ID: 3d0fc4da-9edc-4fd1-b0ec-237c70249e37
+2026-03-13 22:32:24 - api - INFO - logger.py:119 - Request ID: 3d0fc4da-9edc-4fd1-b0ec-237c70249e37 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 4717.28ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/3w98wsgYGx
+2026-03-13 22:32:29 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Ziwei_Zhang - 张子威
+论文数: 0, 项目数: 0
+Request ID: b5aa0d37-25d4-4c59-8e4d-e380f100c923
+2026-03-13 22:32:29 - api - INFO - logger.py:119 - Request ID: b5aa0d37-25d4-4c59-8e4d-e380f100c923 | Method: GET | Path: /api/v1/tutor/detail/tutor_Ziwei_Zhang | Status: 200 | Time: 1653.13ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/3w98wsgYGx
+2026-03-13 22:32:29 - api - WARNING - logger.py:123 - Request ID: b13b2518-7631-448f-9e46-4688e13ce80e | Method: GET | Path: /api/v1/tutor/network/tutor_Ziwei_Zhang | Status: 404 | Time: 0.35ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/3w98wsgYGx
+2026-03-16 21:50:49 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 9e86af7c-ff47-4fe5-86f2-8032e138927b
+2026-03-16 21:50:49 - api - INFO - logger.py:119 - Request ID: 9e86af7c-ff47-4fe5-86f2-8032e138927b | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 5410.78ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0
+2026-03-16 21:51:07 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 269db2d3-2d4c-497b-bf0c-c68b63ca6a5b
+2026-03-16 21:51:07 - api - INFO - logger.py:119 - Request ID: 269db2d3-2d4c-497b-bf0c-c68b63ca6a5b | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 6608.68ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 21:51:16 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Ziwei_Zhang - 张子威
+论文数: 0, 项目数: 0
+Request ID: ad630129-4bdb-4901-9c57-e629ec98e67d
+2026-03-16 21:51:16 - api - INFO - logger.py:119 - Request ID: ad630129-4bdb-4901-9c57-e629ec98e67d | Method: GET | Path: /api/v1/tutor/detail/tutor_Ziwei_Zhang | Status: 200 | Time: 2990.53ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 21:51:17 - api - INFO - logger.py:119 - 获取导师关系图谱成功: tutor_Ziwei_Zhang - 张子威
+合作者数量: 0
+Request ID: f06882a2-22dd-4057-abe1-7db3ac2771ad
+2026-03-16 21:51:17 - api - INFO - logger.py:119 - Request ID: f06882a2-22dd-4057-abe1-7db3ac2771ad | Method: GET | Path: /api/v1/tutor/network/tutor_Ziwei_Zhang | Status: 200 | Time: 979.45ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:36:46 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 9033c32d-76b9-46dd-960c-14c2b1ee2d07
+2026-03-16 22:36:46 - api - INFO - logger.py:119 - Request ID: 9033c32d-76b9-46dd-960c-14c2b1ee2d07 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 5599.16ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:37:16 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Ziwei_Zhang - 张子威
+论文数: 0, 项目数: 0
+Request ID: e4a7514c-f1b6-456f-a7f5-f1cb53949e2e
+2026-03-16 22:37:16 - api - INFO - logger.py:119 - Request ID: e4a7514c-f1b6-456f-a7f5-f1cb53949e2e | Method: GET | Path: /api/v1/tutor/detail/tutor_Ziwei_Zhang | Status: 200 | Time: 2465.91ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:37:26 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Ziwei_Zhang - 张子威, 合作者: 2
+2026-03-16 22:37:26 - api - INFO - logger.py:119 - Request ID: 495045ec-4988-4f28-8e56-cbd254499b54 | Method: GET | Path: /api/v1/tutor/network/tutor_Ziwei_Zhang | Status: 200 | Time: 10680.82ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:38:10 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yunhong_Wang - 王云宏
+论文数: 0, 项目数: 0
+Request ID: fc3e763c-81e2-44b8-b6cc-1519d444096a
+2026-03-16 22:38:10 - api - INFO - logger.py:119 - Request ID: fc3e763c-81e2-44b8-b6cc-1519d444096a | Method: GET | Path: /api/v1/tutor/detail/tutor_Yunhong_Wang | Status: 200 | Time: 2146.24ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:38:21 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yunhong_Wang - 王云宏, 合作者: 2
+2026-03-16 22:38:21 - api - INFO - logger.py:119 - Request ID: 3df20546-c997-4d08-b954-5fc8fbbea22d | Method: GET | Path: /api/v1/tutor/network/tutor_Yunhong_Wang | Status: 200 | Time: 10913.51ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:40:35 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 9a66783b-c0c8-489a-b823-6bb0e3412983
+2026-03-16 22:40:35 - api - INFO - logger.py:119 - Request ID: 9a66783b-c0c8-489a-b823-6bb0e3412983 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1240.92ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:40:45 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 22:40:45 - api - INFO - logger.py:119 - Request ID: 477b2a8d-c3b0-45e1-8ec4-e4a308da70e9 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 9443.60ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:41:20 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: b03dae48-bb66-4c37-93cb-5fef3e445112
+2026-03-16 22:41:20 - api - INFO - logger.py:119 - Request ID: b03dae48-bb66-4c37-93cb-5fef3e445112 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1311.45ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:41:27 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-16 22:41:27 - api - INFO - logger.py:119 - Request ID: 165476c3-6420-436a-9198-a7ee0757241a | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 6464.80ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:45:16 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 7a3bc784-73d4-4651-a54e-e982497235d2
+2026-03-16 22:45:16 - api - INFO - logger.py:119 - Request ID: 7a3bc784-73d4-4651-a54e-e982497235d2 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 4098.52ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:45:23 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: c0fc8c00-98d4-4b1b-a735-6290f200f13d
+2026-03-16 22:45:23 - api - INFO - logger.py:119 - Request ID: c0fc8c00-98d4-4b1b-a735-6290f200f13d | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1240.37ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 22:45:32 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 22:45:32 - api - INFO - logger.py:119 - Request ID: 318b40bc-6cbe-453b-80af-dbfb10a340a3 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 9192.73ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:20:47 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 446ec7dc-a3d8-4b39-9b1a-29e1ae164ad7
+2026-03-16 23:20:47 - api - INFO - logger.py:119 - Request ID: 446ec7dc-a3d8-4b39-9b1a-29e1ae164ad7 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1637.22ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:20:53 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-16 23:20:53 - api - INFO - logger.py:119 - Request ID: 0c3de231-30ae-4aac-87c5-4bcaef0a13fd | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 6253.67ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:32:36 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: e4bcce4e-2c59-4eb9-a75e-e90190d95d56
+2026-03-16 23:32:36 - api - INFO - logger.py:119 - Request ID: e4bcce4e-2c59-4eb9-a75e-e90190d95d56 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 2487.27ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:32:39 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 4bdfd531-d040-45ce-9524-6a159dd3a71e
+2026-03-16 23:32:39 - api - INFO - logger.py:119 - Request ID: 4bdfd531-d040-45ce-9524-6a159dd3a71e | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1645.94ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:32:49 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 23:32:49 - api - INFO - logger.py:119 - Request ID: 46de1cd7-65e8-423c-bd6e-a56131cb0808 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 9889.37ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:03 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: bec983b5-6525-4741-aa6d-3fdaa6f01201
+2026-03-16 23:35:03 - api - INFO - logger.py:119 - Request ID: bec983b5-6525-4741-aa6d-3fdaa6f01201 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 6426.63ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:07 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: b5d93c0f-69d0-46d9-a416-1cc3929c20cc
+2026-03-16 23:35:07 - api - INFO - logger.py:119 - Request ID: b5d93c0f-69d0-46d9-a416-1cc3929c20cc | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1582.10ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:18 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 23:35:18 - api - INFO - logger.py:119 - Request ID: c7e259ea-1f82-4137-816f-40244a0e56ac | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 11181.38ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:23 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 5334370a-91e9-466e-bc5b-5656a6d07394
+2026-03-16 23:35:23 - api - INFO - logger.py:119 - Request ID: 5334370a-91e9-466e-bc5b-5656a6d07394 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 908.91ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:30 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 23:35:30 - api - INFO - logger.py:119 - Request ID: b784abe7-01e3-4385-920b-02db2bb5e077 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 6340.48ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:35 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 73f91e4b-defa-40b6-a583-040d96cd9af8
+2026-03-16 23:35:35 - api - INFO - logger.py:119 - Request ID: 73f91e4b-defa-40b6-a583-040d96cd9af8 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1353.18ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:35:41 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-16 23:35:41 - api - INFO - logger.py:119 - Request ID: 020fac06-64c6-4133-a915-d4610a6f42ab | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 5685.75ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:18 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 541a92c9-c4b9-4731-804a-1387121c86a7
+2026-03-16 23:36:18 - api - INFO - logger.py:119 - Request ID: 541a92c9-c4b9-4731-804a-1387121c86a7 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1197.12ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:26 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-16 23:36:26 - api - INFO - logger.py:119 - Request ID: e536d806-a4c4-47b0-95cc-0087882f8753 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 7931.55ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:28 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: e669db82-6474-43c9-893c-140ef613fd28
+2026-03-16 23:36:28 - api - INFO - logger.py:119 - Request ID: e669db82-6474-43c9-893c-140ef613fd28 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1145.62ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:35 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-16 23:36:35 - api - INFO - logger.py:119 - Request ID: 7384ce98-9019-4d7a-a42e-edcabe177d60 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 6940.66ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:39 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Feng_Lu - 鲁峰
+论文数: 0, 项目数: 0
+Request ID: 9017284d-d457-49f8-aa2b-dce4be20eb11
+2026-03-16 23:36:39 - api - INFO - logger.py:119 - Request ID: 9017284d-d457-49f8-aa2b-dce4be20eb11 | Method: GET | Path: /api/v1/tutor/detail/tutor_Feng_Lu | Status: 200 | Time: 907.16ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-16 23:36:47 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Feng_Lu - 鲁峰, 合作者: 2
+2026-03-16 23:36:47 - api - INFO - logger.py:119 - Request ID: 9504d33f-a163-4739-8b1f-fb9a5c34e217 | Method: GET | Path: /api/v1/tutor/network/tutor_Feng_Lu | Status: 200 | Time: 8689.07ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/5jKiV6cAiY
+2026-03-17 20:31:37 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 3d076dab-0c44-4c80-a293-65bd6e372695
+2026-03-17 20:31:37 - api - INFO - logger.py:119 - Request ID: 3d076dab-0c44-4c80-a293-65bd6e372695 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 9934.40ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:31:49 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 7563a1e7-f865-4380-90d6-edddac377e3a
+2026-03-17 20:31:49 - api - INFO - logger.py:119 - Request ID: 7563a1e7-f865-4380-90d6-edddac377e3a | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 1486.56ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:31:53 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: ddbdf8c9-b1f6-4080-97b6-89bc8982874a
+2026-03-17 20:31:53 - api - INFO - logger.py:119 - Request ID: ddbdf8c9-b1f6-4080-97b6-89bc8982874a | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1542.17ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:31:59 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 20:31:59 - api - INFO - logger.py:119 - Request ID: 40c262a9-9188-40ba-b708-f31b0d1758fc | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 5929.49ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:44:41 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: f8126598-aa70-47f5-9c12-35f1c927a292
+2026-03-17 20:44:41 - api - INFO - logger.py:119 - Request ID: f8126598-aa70-47f5-9c12-35f1c927a292 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 5493.41ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:44:48 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 90bfe184-36c4-45d8-b261-cbc8618ce355
+2026-03-17 20:44:48 - api - INFO - logger.py:119 - Request ID: 90bfe184-36c4-45d8-b261-cbc8618ce355 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1719.22ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 20:44:55 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 20:44:55 - api - INFO - logger.py:119 - Request ID: 30b6be6c-65fd-4d58-97bc-855c55f4c2e7 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 6935.74ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:02:58 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 367414ad-3af5-4d78-8307-d08d935ef0a7
+2026-03-17 21:02:58 - api - INFO - logger.py:119 - Request ID: 367414ad-3af5-4d78-8307-d08d935ef0a7 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 4038.95ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:03:04 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: cc1b9b65-865b-4ba1-9ea8-dc3d2f6bdce6
+2026-03-17 21:03:04 - api - INFO - logger.py:119 - Request ID: cc1b9b65-865b-4ba1-9ea8-dc3d2f6bdce6 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 3355.95ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:03:14 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 21:03:14 - api - INFO - logger.py:119 - Request ID: 96b6009d-4f60-44e8-84ac-9e1625c6d719 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 9823.12ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:03:44 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: d7c54c00-b808-4543-9ed4-7b934aa4997e
+2026-03-17 21:03:44 - api - INFO - logger.py:119 - Request ID: d7c54c00-b808-4543-9ed4-7b934aa4997e | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 2168.51ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:03:50 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-17 21:03:50 - api - INFO - logger.py:119 - Request ID: 75e7feab-6259-4e31-87a0-734e5f3d7d28 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 6177.31ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:12:58 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: cbffd24b-4d37-49d3-95b7-f0826e12b201
+2026-03-17 21:12:58 - api - INFO - logger.py:119 - Request ID: cbffd24b-4d37-49d3-95b7-f0826e12b201 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 3431.28ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:13:03 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: be4507e4-7ab9-4cc9-b7c5-2f81260793c8
+2026-03-17 21:13:03 - api - INFO - logger.py:119 - Request ID: be4507e4-7ab9-4cc9-b7c5-2f81260793c8 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 2491.44ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:13:14 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 21:13:14 - api - INFO - logger.py:119 - Request ID: f296f4cb-0a3a-4562-9e41-6419889a0578 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 10466.69ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:14:05 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: f5930c4b-8272-492d-8c9b-7c71b1886d44
+2026-03-17 21:14:05 - api - INFO - logger.py:119 - Request ID: f5930c4b-8272-492d-8c9b-7c71b1886d44 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 2142.54ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:14:14 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 21:14:14 - api - INFO - logger.py:119 - Request ID: 28cebf4a-9050-4f22-a62f-bf3d884f72b9 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 8414.37ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:14:22 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 7553ecb7-ce3d-4dde-aae7-fa71a2fb65b6
+2026-03-17 21:14:22 - api - INFO - logger.py:119 - Request ID: 7553ecb7-ce3d-4dde-aae7-fa71a2fb65b6 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 4797.76ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:14:29 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-17 21:14:29 - api - INFO - logger.py:119 - Request ID: 734d5b69-7713-4a7e-a8c6-803101856e38 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 7280.66ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:39:35 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: d5541b42-9714-4a04-8cf0-eb31902949a9
+2026-03-17 21:39:35 - api - INFO - logger.py:119 - Request ID: d5541b42-9714-4a04-8cf0-eb31902949a9 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 6754.69ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:41:15 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 8b327d90-b144-4fb1-84a9-b8e31f00d660
+2026-03-17 21:41:15 - api - INFO - logger.py:119 - Request ID: 8b327d90-b144-4fb1-84a9-b8e31f00d660 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1700.02ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:41:20 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 21:41:20 - api - INFO - logger.py:119 - Request ID: cd3eafe8-22cc-4b67-9a39-99e212e33dac | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 5842.78ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:41:29 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 3e5cfe40-4f8c-4053-9315-1fba3ec1eaeb
+2026-03-17 21:41:29 - api - INFO - logger.py:119 - Request ID: 3e5cfe40-4f8c-4053-9315-1fba3ec1eaeb | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 2144.71ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:41:37 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-17 21:41:37 - api - INFO - logger.py:119 - Request ID: d0ada6c8-e9ec-4f3e-a5bd-4df9f0993c53 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 7562.07ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:47:55 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 2bf9c36d-4649-46aa-aa37-b531b3d5f3c7
+2026-03-17 21:47:55 - api - INFO - logger.py:119 - Request ID: 2bf9c36d-4649-46aa-aa37-b531b3d5f3c7 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 5713.50ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:54:09 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: d6b68ea1-827c-426d-9c15-43539681fdfa
+2026-03-17 21:54:09 - api - INFO - logger.py:119 - Request ID: d6b68ea1-827c-426d-9c15-43539681fdfa | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 2214.41ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 21:54:18 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 21:54:18 - api - INFO - logger.py:119 - Request ID: e4a326d6-b0a3-404d-96ca-d08f6ea48357 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 8988.57ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 22:31:48 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: c63eeec7-30c4-4a7b-876f-5deb800ff488
+2026-03-17 22:31:48 - api - INFO - logger.py:119 - Request ID: c63eeec7-30c4-4a7b-876f-5deb800ff488 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1509.20ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 22:31:58 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 22:31:58 - api - INFO - logger.py:119 - Request ID: 58f8bf41-be01-4815-a169-9c2037af65ae | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 9190.08ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:24:09 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: e7e4aaef-f00a-4f08-ad09-4b4e1df52980
+2026-03-17 23:24:09 - api - INFO - logger.py:119 - Request ID: e7e4aaef-f00a-4f08-ad09-4b4e1df52980 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1667.96ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:24:11 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 73b042c9-8450-4b0b-b55c-1e0d32f9d9d5
+2026-03-17 23:24:11 - api - INFO - logger.py:119 - Request ID: 73b042c9-8450-4b0b-b55c-1e0d32f9d9d5 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1659.28ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:24:16 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-17 23:24:16 - api - INFO - logger.py:119 - Request ID: eb5a190f-b7cf-42a6-ab26-3c40e99f9d22 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 7169.42ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:24:24 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-17 23:24:24 - api - INFO - logger.py:119 - Request ID: df4631fb-b9bd-4ac5-80c2-d9835ae847ce | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 7962.77ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:26:26 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 022c2cda-c7b9-4881-887e-723d81583980
+2026-03-17 23:26:26 - api - INFO - logger.py:119 - Request ID: 022c2cda-c7b9-4881-887e-723d81583980 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 5616.70ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:26:36 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 35fcaa4b-1466-47e5-89a8-6c55debdf3ba
+2026-03-17 23:26:36 - api - INFO - logger.py:119 - Request ID: 35fcaa4b-1466-47e5-89a8-6c55debdf3ba | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1235.98ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:26:46 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 23:26:46 - api - INFO - logger.py:119 - Request ID: 4cb0c457-278f-447b-bf84-f86298b000cf | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 10394.54ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:03 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: c3dc67f5-e683-4f2b-93bb-75a37570ccb0
+2026-03-17 23:27:03 - api - INFO - logger.py:119 - Request ID: c3dc67f5-e683-4f2b-93bb-75a37570ccb0 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1696.84ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:11 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 23:27:11 - api - INFO - logger.py:119 - Request ID: 58d36013-7a86-4ad6-a713-8369a1c37e9a | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 8060.37ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:22 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 7426df08-dfdf-4cb7-be71-a9212e296969
+2026-03-17 23:27:22 - api - INFO - logger.py:119 - Request ID: 7426df08-dfdf-4cb7-be71-a9212e296969 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 3015.91ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:24 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: cc46f729-1b1c-4149-bf61-e8223685c094
+2026-03-17 23:27:24 - api - INFO - logger.py:119 - Request ID: cc46f729-1b1c-4149-bf61-e8223685c094 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1227.04ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:37 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 23:27:37 - api - INFO - logger.py:119 - Request ID: 97b7e6f8-f52a-4fe3-b947-3110711c8f91 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 12491.23ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:47 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 23371219-7159-4aa9-9a23-51177eddb3ab
+2026-03-17 23:27:47 - api - INFO - logger.py:119 - Request ID: 23371219-7159-4aa9-9a23-51177eddb3ab | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1305.89ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:27:55 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-17 23:27:55 - api - INFO - logger.py:119 - Request ID: c780610c-cb6a-46bc-b940-2090ebd61bd0 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 8276.19ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:28:35 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bo_Jiang_Professor - Bo Jiang, Professor
+论文数: 0, 项目数: 0
+Request ID: cf2e8bc8-fccb-40e2-9a3f-2c54f8dbbf62
+2026-03-17 23:28:35 - api - INFO - logger.py:119 - Request ID: cf2e8bc8-fccb-40e2-9a3f-2c54f8dbbf62 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bo_Jiang_Professor | Status: 200 | Time: 1679.25ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-17 23:28:43 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bo_Jiang_Professor - Bo Jiang, Professor, 合作者: 3
+2026-03-17 23:28:43 - api - INFO - logger.py:119 - Request ID: a25a6eaf-a604-42a1-ad16-6d1b85e3a868 | Method: GET | Path: /api/v1/tutor/network/tutor_Bo_Jiang_Professor | Status: 200 | Time: 8362.84ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/VIu5ZS7sF5
+2026-03-18 17:17:33 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: e82500a0-36ba-4abd-8564-86b60e0d4ce7
+2026-03-18 17:17:33 - api - INFO - logger.py:119 - Request ID: e82500a0-36ba-4abd-8564-86b60e0d4ce7 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 6967.51ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:17:40 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 0058e5a7-41ff-4cda-841b-6253ad99c720
+2026-03-18 17:17:40 - api - INFO - logger.py:119 - Request ID: 0058e5a7-41ff-4cda-841b-6253ad99c720 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1920.29ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:17:46 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-18 17:17:46 - api - INFO - logger.py:119 - Request ID: 88e3ebb3-b0f3-492f-a082-880486fcf8d8 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 5865.80ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:34:03 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 6ab1097c-214a-4ff2-9d9f-1b2949ecd08b
+2026-03-18 17:34:03 - api - INFO - logger.py:119 - Request ID: 6ab1097c-214a-4ff2-9d9f-1b2949ecd08b | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 2012.98ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:34:07 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: ecceee7e-3ee2-4b61-9679-726479d5aeda
+2026-03-18 17:34:07 - api - INFO - logger.py:119 - Request ID: ecceee7e-3ee2-4b61-9679-726479d5aeda | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 2517.39ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:34:12 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-18 17:34:12 - api - INFO - logger.py:119 - Request ID: bee39716-3677-41d5-a331-5af451da4988 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 5092.49ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:34:26 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Bin_Zhou - 周彬
+论文数: 0, 项目数: 0
+Request ID: 9e8c0d82-6868-4ae3-829f-b27762e515f2
+2026-03-18 17:34:26 - api - INFO - logger.py:119 - Request ID: 9e8c0d82-6868-4ae3-829f-b27762e515f2 | Method: GET | Path: /api/v1/tutor/detail/tutor_Bin_Zhou | Status: 200 | Time: 1132.71ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 17:34:29 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Bin_Zhou - 周彬, 合作者: 5
+2026-03-18 17:34:29 - api - INFO - logger.py:119 - Request ID: dd3b1951-efe1-4260-b0de-99f0e8b0ec34 | Method: GET | Path: /api/v1/tutor/network/tutor_Bin_Zhou | Status: 200 | Time: 2979.29ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 18:07:20 - api - INFO - logger.py:119 - 获取导师列表成功
+条件: keyword=None, school=None, department=None, city=None
+分页: page=1, page_size=10
+结果: 10/18
+Request ID: 32559554-dce6-4af2-87a7-fceeece4fed0
+2026-03-18 18:07:20 - api - INFO - logger.py:119 - Request ID: 32559554-dce6-4af2-87a7-fceeece4fed0 | Method: GET | Path: /api/v1/tutor/list | Status: 200 | Time: 2146.52ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 18:07:26 - api - INFO - logger.py:119 - 获取导师详情成功: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）
+论文数: 0, 项目数: 0
+Request ID: 925e6078-1984-409f-945a-eefe06ad5fe6
+2026-03-18 18:07:26 - api - INFO - logger.py:119 - Request ID: 925e6078-1984-409f-945a-eefe06ad5fe6 | Method: GET | Path: /api/v1/tutor/detail/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 1705.58ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
+2026-03-18 18:07:31 - api - INFO - logger.py:119 - 生成导师关系图谱: tutor_Yongxin_Tong童咏昕 - Yongxin Tong（童咏昕）, 合作者: 2
+2026-03-18 18:07:31 - api - INFO - logger.py:119 - Request ID: 5248fedd-dd13-4296-b5a2-665002dc8e74 | Method: GET | Path: /api/v1/tutor/network/tutor_Yongxin_Tong童咏昕 | Status: 200 | Time: 4785.90ms | IP: 127.0.0.1 | UA: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/2.01.2510280 MicroMessenger/8.0.5 Language/zh_CN webview/ hash/1956646663 sid/JNqkmCHK9h
