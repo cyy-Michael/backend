@@ -3,12 +3,12 @@
 提供导师信息的查询和筛选功能
 """
 
-from fastapi import APIRouter, HTTPException, Depends, Request, Query
+from fastapi import APIRouter, HTTPException, Request, Query
 from typing import List, Optional
 from datetime import datetime
+from urllib.parse import unquote
 
-from app.models import User, TutorBrief
-from app.api.v1.auth.login import get_current_user
+from app.models import TutorBrief
 from app.utils import (
     success_response,
     error_response,
@@ -35,8 +35,7 @@ async def get_tutor_list(
     keyword: Optional[str] = Query(None, description="搜索关键词(姓名/研究方向)"),
     school: Optional[str] = Query(None, description="学校筛选"),
     department: Optional[str] = Query(None, description="学院筛选"),
-    city: Optional[str] = Query(None, description="城市筛选"),
-    current_user: Optional[User] = Depends(get_current_user)
+    city: Optional[str] = Query(None, description="城市筛选")
 ):
     """
     导师列表接口
@@ -49,29 +48,49 @@ async def get_tutor_list(
         school: 学校筛选
         department: 学院筛选
         city: 城市筛选
-        current_user: 当前登录用户（可选）
     
     Returns:
         导师列表
     """
     try:
         db = get_db()
-        
+        tutors_coll = db.tutors
+
         # 构建查询条件
         query = {}
         
         if keyword:
+<<<<<<< Updated upstream
             # 搜索姓名或研究方向
             query["$or"] = [
                 {"name": {"$regex": keyword, "$options": "i"}},
                 {"research_direction": {"$regex": keyword, "$options": "i"}}
+=======
+            # 兼容小程序可能传入的已 URL 编码形式（例如：%E5%BC%A0%E5%AD%90%E5%A8%81）
+            if "%" in keyword:
+                decoded = unquote(keyword)
+                # 只有在确实解码出中文等可见字符时才替换
+                if decoded != keyword:
+                    keyword = decoded
+            
+            # 搜索姓名或研究方向（字段名与当前 tutors 文档保持一致）
+            query["$and"] = [
+                {
+                    "$or": [
+                        {"name": {"$regex": keyword, "$options": "i"}},
+                        {"direction": {"$regex": keyword, "$options": "i"}},
+                    ]
+                }
+>>>>>>> Stashed changes
             ]
         
         if school:
-            query["school_name"] = {"$regex": school, "$options": "i"}
+            # 导入的数据字段为 school，而不是 school_name
+            query["school"] = {"$regex": school, "$options": "i"}
         
         if department:
-            query["department_name"] = {"$regex": department, "$options": "i"}
+            # 导入的数据字段为 department，而不是 department_name
+            query["department"] = {"$regex": department, "$options": "i"}
         
         if city:
             query["city"] = {"$regex": city, "$options": "i"}
@@ -79,11 +98,12 @@ async def get_tutor_list(
         # 计算分页
         skip = (page - 1) * page_size
         
-        # 获取总数
-        total = db.tutors.count_documents(query)
-        
-        # 获取数据
-        tutors = db.tutors.find(query).sort("created_at", -1).skip(skip).limit(page_size)
+        # 获取总数（Motor 为异步接口）
+        total = await tutors_coll.count_documents(query)
+
+        # 获取数据（异步游标转列表）
+        cursor = tutors_coll.find(query).sort("created_at", -1).skip(skip).limit(page_size)
+        tutors = await cursor.to_list(length=page_size)
         
         # 转换为响应模型
         tutor_list = []
@@ -91,11 +111,11 @@ async def get_tutor_list(
             tutor_brief = TutorBrief(
                 id=tutor["id"],
                 name=tutor["name"],
-                title=tutor.get("title"),
-                school=tutor.get("school_name", ""),
-                department=tutor.get("department_name", ""),
+                title=tutor.get("jobname") or tutor.get("title"),
+                school=tutor.get("school", ""),
+                department=tutor.get("department", ""),
                 tags=tutor.get("tags", []),
-                avatar=tutor.get("avatar_url")
+                avatar=tutor.get("avatar"),
             )
             tutor_list.append(tutor_brief)
         
@@ -125,7 +145,8 @@ async def get_tutor_list(
         raise HTTPException(
             status_code=500,
             detail=error_response(
-                message="获取导师列表失败",
+                # 在开发环境直接把异常信息带上，方便排查
+                message=f"获取导师列表失败: {str(e)}",
                 error={"request_id": request.state.request_id}
             )
         )
@@ -138,8 +159,7 @@ async def get_tutor_list(
 )
 async def get_tutor_detail(
     request: Request,
-    tutor_id: str,
-    current_user: Optional[User] = Depends(get_current_user)
+    tutor_id: str
 ):
     """
     导师详情接口
@@ -147,7 +167,6 @@ async def get_tutor_detail(
     Args:
         request: 请求对象
         tutor_id: 导师ID
-        current_user: 当前登录用户（可选）
     
     Returns:
         导师详细信息
@@ -170,10 +189,50 @@ async def get_tutor_detail(
         # 获取导师详细信息（从tutor_details表）
         tutor_detail = db.tutor_details.find_one({"tutor_id": tutor_id})
         
+<<<<<<< Updated upstream
         # 构建响应数据
+=======
+        # 获取论文列表（从papers表）
+        papers_cursor = db.papers.find({"tutor_id": tutor_id}).sort("year", -1)
+        papers = await papers_cursor.to_list(length=100)
+        papers_list = [
+            {
+                "id": paper["id"],
+                "title": paper.get("title"),
+                "authors": paper.get("authors", []),
+                "journal": paper.get("journal"),
+                "year": paper.get("year"),
+                "doi": paper.get("doi"),
+                "abstract": paper.get("abstract"),
+                "citations": paper.get("citations", 0),
+                "url": paper.get("url")
+            }
+            for paper in papers
+        ]
+        
+        # 获取项目列表（从projects表）
+        projects_cursor = db.projects.find({"tutor_id": tutor_id}).sort("start_date", -1)
+        projects = await projects_cursor.to_list(length=50)
+        projects_list = [
+            {
+                "id": project["id"],
+                "title": project.get("title"),
+                "funding": project.get("funding"),
+                "start_date": project.get("start_date"),
+                "end_date": project.get("end_date"),
+                "description": project.get("description"),
+                "amount": project.get("amount"),
+                "status": project.get("status", "ongoing")
+            }
+            for project in projects
+        ]
+        
+        # 构建完整的响应数据 - 使用与导入数据一致的字段名
+>>>>>>> Stashed changes
         detail_data = {
             "id": tutor["id"],
             "name": tutor["name"],
+<<<<<<< Updated upstream
             "title": tutor.get("title"),
             "school": tutor.get("school_name", ""),
             "department": tutor.get("department_name", ""),
@@ -202,6 +261,60 @@ async def get_tutor_detail(
             })
             detail_data["is_collected"] = favorite is not None
         
+=======
+            "title": tutor.get("jobname") or tutor.get("title"),
+            "school": tutor.get("school", ""),
+            "school_id": tutor.get("school_id"),
+            "department": tutor.get("department", ""),
+            "department_id": tutor.get("department_id"),
+            "avatar": tutor.get("avatar"),
+            "bio": tutor.get("bio"),
+            "achievements": tutor.get("achievements"),
+            
+            # 联系方式
+            "email": tutor.get("email"),
+            "phone": tutor.get("phone"),
+            "personal_page": tutor.get("personal_page"),
+            
+            # 研究信息
+            "research_direction": tutor.get("direction"),
+            "direction": tutor.get("direction"),
+            "tags": tutor.get("tags", []),
+            "guidance": tutor.get("guidance"),
+            
+            # 统计信息
+            "paper_count": len(tutor.get("coops", [])),  # 合作信息中包含论文
+            "project_count": len([c for c in tutor.get("coops", []) if c.get("tag") == "项目"]),
+            "student_count": len(tutor.get("students", [])),
+            
+            # 学术成果/合作信息（从tutors集合的coops字段）
+            "coops": tutor.get("coops", []),
+            "papers": [c for c in tutor.get("coops", []) if c.get("tag") == "论文"],
+            "projects": [c for c in tutor.get("coops", []) if c.get("tag") == "项目"],
+            
+            # 学生信息
+            "students": tutor.get("students", []),
+            
+            # 社交/服务信息
+            "socials": tutor.get("socials", []),
+            "service": tutor.get("service"),
+            
+            # 成长路径
+            "growthPath": tutor.get("growthPath", []),
+            
+            # 风险信息
+            "risks": tutor.get("risks", []),
+            
+            # 其他信息
+            "created_at": tutor.get("created_at"),
+            "updated_at": tutor.get("updated_at"),
+            "crawled_at": tutor.get("crawled_at"),
+            
+            # 收藏状态（未登录用户默认未收藏）
+            "is_collected": False
+        }
+        
+>>>>>>> Stashed changes
         api_logger.info(
             f"获取导师详情成功: {tutor_id} - {tutor['name']}\n"
             f"Request ID: {request.state.request_id}"
