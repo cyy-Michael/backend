@@ -25,7 +25,7 @@ v1_router = APIRouter(
 v1_router.include_router(auth_router, prefix="/auth", tags=["authentication"])
 v1_router.include_router(user_profile_router, tags=["user"])
 v1_router.include_router(user_favorite_router, tags=["user", "favorite"])
-v1_router.include_router(tutor_router, prefix="/tutor", tags=["tutor"])
+v1_router.include_router(tutor_router, tags=["tutor"])
 v1_router.include_router(tutor_network_router, tags=["tutor", "network"])
 v1_router.include_router(tutor_search_router, tags=["tutor", "search"])
 v1_router.include_router(tutor_manage_router, tags=["tutor", "admin"])
