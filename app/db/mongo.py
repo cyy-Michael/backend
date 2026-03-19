@@ -4,10 +4,19 @@ from pymongo.errors import ConnectionFailure
 from app.core.config.mongo_config import settings
 from loguru import logger
 
+<<<<<<< Updated upstream
 # 单例模式：确保全局只有一个MongoDB连接池
 class MongoDBClient:
     _instance = None
     _client = None
+=======
+import time
+from typing import Any, Dict, List, Optional, Union
+from motor.motor_asyncio import AsyncIOMotorClient, AsyncIOMotorDatabase
+from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError, PyMongoError
+from app.core.config.database import database_settings
+from app.utils.logger import app_logger as logger
+>>>>>>> Stashed changes
 
     def __new__(cls):
         if cls._instance is None:
