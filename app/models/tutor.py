@@ -20,11 +20,6 @@ class TutorBase(BaseModel):
     avatar_url: Optional[str] = None
     personal_page_url: Optional[str] = None
     research_direction: Optional[str] = None
-    province: Optional[str] = None
-    city: Optional[str] = None
-    subject: Optional[str] = None
-    admission_types: List[str] = []
-    academic_tags: List[str] = []
 
 
 class TutorCreate(TutorBase):
@@ -67,12 +62,6 @@ class TutorBrief(BaseModel):
     department: str
     tags: List[str] = []
     avatar: Optional[str] = None
-    research_direction: Optional[str] = None
-    province: Optional[str] = None
-    city: Optional[str] = None
-    subject: Optional[str] = None
-    admission_types: List[str] = []
-    academic_tags: List[str] = []
 
     class Config:
         from_attributes = True
