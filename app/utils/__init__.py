@@ -39,6 +39,12 @@ from .security import (
     mask_sensitive_data
 )
 
+<<<<<<< Updated upstream
+=======
+# 不在顶层导出 admin，避免循环导入：login → utils → admin → login
+# 需要管理员相关时请使用: from app.utils.admin import get_current_admin 等
+
+>>>>>>> Stashed changes
 __all__ = [
     # response
     'success_response',
@@ -71,5 +77,9 @@ __all__ = [
     'sanitize_input',
     'validate_email',
     'validate_phone',
+<<<<<<< Updated upstream
     'mask_sensitive_data'
+=======
+    'mask_sensitive_data',
+>>>>>>> Stashed changes
 ]
