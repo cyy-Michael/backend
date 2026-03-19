@@ -18,9 +18,9 @@ from app.utils import (
     success_response,
     error_response,
     business_error_response,
-    api_logger,
-    get_admin_user
+    api_logger
 )
+from app.utils.admin import get_current_admin as get_admin_user
 from app.db.mongo import get_db
 
 router = APIRouter(
@@ -64,20 +64,20 @@ async def get_tutors_data(
         query["$and"].append({
             "$or": [
                 {"name": {"$regex": keyword, "$options": "i"}},
-                {"research_direction": {"$regex": keyword, "$options": "i"}},
-                {"school_name": {"$regex": keyword, "$options": "i"}},
-                {"department_name": {"$regex": keyword, "$options": "i"}}
+                {"direction": {"$regex": keyword, "$options": "i"}},
+                {"school": {"$regex": keyword, "$options": "i"}},
+                {"department": {"$regex": keyword, "$options": "i"}}
             ]
         })
     
     if school:
-        query["school_name"] = {"$regex": school, "$options": "i"}
+        query["school"] = {"$regex": school, "$options": "i"}
     
     if department:
-        query["department_name"] = {"$regex": department, "$options": "i"}
+        query["department"] = {"$regex": department, "$options": "i"}
     
     if title:
-        query["title"] = {"$regex": title, "$options": "i"}
+        query["jobname"] = {"$regex": title, "$options": "i"}
     
     # 查询导师数据
     tutors_cursor = db.tutors.find(query).limit(limit)
